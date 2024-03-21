@@ -1,0 +1,16 @@
+/node_modules
+
+/build
+/dist
+
+/logs
+
+.env
+.env.local
+.env.*.local
+
+/.pnp
+.pnp.js
+
+.DS_Store
+Thumbs.db
