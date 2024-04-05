@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
@@ -44,7 +45,7 @@ app.put("/:id", async (req, res) => {
 });
 
 app.listen(port, () => {
-    mongoose.connect('mongodb+srv://gabrielhenlc:Uf2RYGNEy0ZWVEw8@codex-todo.fctn9z3.mongodb.net/?retryWrites=true&w=majority&appName=codex-todo');
+    mongoose.connect(`mongodb+srv://${process.env.MONGODB_PASSWORD}/?retryWrites=true&w=majority&appName=codex-todo`);
     console.log("App running on port " + port);
 });
 
