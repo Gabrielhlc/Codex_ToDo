@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Alert, FlatList, Text, TouchableOpacity, View } from "react-native";
+import { Alert, FlatList, View } from "react-native";
 
 import { EmptyList } from "../../components/EmptyList";
 import { Header } from "../../components/Header";
