@@ -5,6 +5,8 @@ import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
 export type Task = {
+    _id: string
+    __v: number
     text: string
     isChecked: boolean
 
